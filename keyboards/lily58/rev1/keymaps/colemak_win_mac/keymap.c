@@ -18,8 +18,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_EQL,   KC_1,           KC_2,           KC_3,           KC_4,             KC_5,                                                KC_6,              KC_7,             KC_8,           KC_9,           KC_0,            KC_MINS,
   KC_TAB,   KC_Q,           KC_W,           KC_F,           KC_P,             KC_G,                                                KC_J,              KC_L,             KC_U,           KC_Y,           KC_SCLN,         KC_GRV,
   KC_BSPC,  LSFT_T(KC_A),   LALT_T(KC_R),   LCTL_T(KC_S),   LGUI_T(KC_T),     KC_D,                                                KC_H,              RGUI_T(KC_N),     RCTL_T(KC_E),   RALT_T(KC_I),   RSFT_T(KC_O),    KC_QUOT,
-  KC_ESC,   LCTL_T(KC_Z),   KC_X,           KC_C,           LSFT_T(KC_V),     KC_B,             LCA_T(KC_MINUS),  MEH_T(KC_MINUS), KC_K,              RSFT_T(KC_M),    KC_COMM,        KC_DOT,         RCTL_T(KC_SLSH), CW_TOGG,
-                                            KC_DEL,         KC_LEFT,          LALT_T(KC_RIGHT), LT(2, KC_SPC),                     LT(3, KC_ENT),     RALT_T(KC_DOWN),  KC_UP,          KC_RGUI
+  KC_GRAVE,   LCTL_T(KC_Z),   KC_X,           KC_C,           LSFT_T(KC_V),     KC_B,             LCA_T(KC_MINUS),  MEH_T(KC_MINUS), KC_K,              RSFT_T(KC_M),    KC_COMM,        KC_DOT,         RCTL_T(KC_SLSH), CW_TOGG,
+                                            KC_DEL,         KC_LEFT,          LALT_T(KC_RIGHT), LT(2, KC_SPC),                     LT(3, KC_ENT),     RALT_T(KC_DOWN),  KC_UP,          KC_ESC
 ),
 /* COLEMAKM
 * Colemak w/HRMs set up for Mac OS
@@ -29,8 +29,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_EQL,   KC_1,           KC_2,           KC_3,           KC_4,             KC_5,                                                 KC_6,             KC_7,             KC_8,           KC_9,           KC_0,            KC_MINS,
   KC_TAB,   KC_Q,           KC_W,           KC_F,           KC_P,             KC_G,                                                 KC_J,             KC_L,             KC_U,           KC_Y,           KC_SCLN,         KC_GRV,
   KC_BSPC,  LSFT_T(KC_A),   LCTL_T(KC_R),   LGUI_T(KC_S),   LALT_T(KC_T),     KC_D,                                                 KC_H,             RALT_T(KC_N),     RGUI_T(KC_E),   RCTL_T(KC_I),   RSFT_T(KC_O),    KC_QUOT,
-  KC_ESC,   LGUI_T(KC_Z),   KC_X,           KC_C,           LSFT_T(KC_V),     KC_B,             LCA_T(KC_MINUS),   MEH_T(KC_MINUS), KC_K,             RSFT_T(KC_M),    KC_COMM,        KC_DOT,         RGUI_T(KC_SLSH), CW_TOGG,
-                                            KC_DEL,         KC_LEFT,          LALT_T(KC_RIGHT), LT(2, KC_SPC),                      LT(3, KC_ENT),    RALT_T(KC_DOWN),  KC_UP,          KC_RGUI
+  KC_GRAVE,   LGUI_T(KC_Z),   KC_X,           KC_C,           LSFT_T(KC_V),     KC_B,             LCA_T(KC_MINUS),   MEH_T(KC_MINUS), KC_K,             RSFT_T(KC_M),    KC_COMM,        KC_DOT,         RGUI_T(KC_SLSH), CW_TOGG,
+                                            KC_DEL,         KC_LEFT,          LALT_T(KC_RIGHT), LT(2, KC_SPC),                      LT(3, KC_ENT),    RALT_T(KC_DOWN),  KC_UP,          KC_ESC
 ),
 /* LOWER
  * Number and symbol layer
