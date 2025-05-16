@@ -50,16 +50,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,                          TO(0),    TO(1),          KC_TRNS,        KC_TRNS,        KC_TRNS,            KC_TRNS,
   KC_TRNS,  KC_TRNS,  KC_NO,    MS_UP,    KC_NO,    MS_WHLU,                          KC_NO,    KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,             KC_TRNS,
   KC_TRNS,  KC_LGUI,  MS_LEFT,  MS_DOWN,  MS_RGHT,  MS_WHLD,                          KC_NO,    KC_LEFT,        KC_DOWN,         KC_UP,         KC_RGHT,            KC_NO,
-  KC_TRNS,  KC_LCTL,  KC_LSFT,  MS_BTN1,  MS_BTN2,  KC_LEFT_SHIFT,  KC_TRNS, KC_TRNS, KC_PLUS,  LCTRL(KC_LEFT), LALT(KC_LEFT),  LALT(KC_RIGHT), LCTRL(KC_RIGHT),    KC_BSLS,
+  KC_TRNS,  KC_LCTL,  KC_LSFT,  MS_BTN1,  MS_BTN2,  KC_LEFT_SHIFT,  KC_TRNS, KC_TRNS, KC_PLUS,  C(KC_LEFT), LALT(KC_LEFT),  LALT(KC_RIGHT), C(KC_RIGHT),    KC_BSLS,
                                 KC_TRNS,  KC_TRNS,  KC_TRNS,        KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,        KC_TRNS
 ),
 
 [_NAV] = LAYOUT(
-  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,        KC_TRNS,        KC_TRNS,                    TO(0),          TO(1),          KC_TRNS,        KC_TRNS,        KC_TRNS,            KC_TRNS,
-  KC_TRNS,  KC_TRNS,  KC_NO,    C(KC_LEFT),     C(KC_RIGHT),    MS_WHLU,                    KC_NO,          KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,             KC_TRNS,
-  KC_TRNS,  KC_LALT,  KC_LCTRL, KC_LSFT,        KC_TAB,         MS_WHLD,                    KC_NO,          KC_LEFT,        KC_DOWN,         KC_UP,         KC_RGHT,            KC_NO,
-  KC_TRNS,  KC_LGUI,  KC_LSFT,  RCS(KC_TAB),    LCTRL(KC_TAB),  KC_TRNS,  KC_TRNS, KC_TRNS, LGUI(KC_LEFT),  LCTRL(KC_LEFT), LALT(KC_LEFT),  LALT(KC_RIGHT), LCTRL(KC_RIGHT),    LGUI(KC_RIGHT),
-                                KC_TRNS,        KC_TRNS,        KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,        KC_TRNS,        KC_TRNS
+  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,        KC_TRNS,        KC_TRNS,                    TO(0),      TO(1),          KC_TRNS,        KC_TRNS,        KC_TRNS,            KC_TRNS,
+  KC_TRNS,  KC_TRNS,  KC_NO,    C(KC_LEFT),     C(KC_RIGHT),    MS_WHLU,                    KC_NO,      KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,             KC_TRNS,
+  KC_TRNS,  KC_LALT,  KC_LCTL, KC_LSFT,        KC_TAB,         MS_WHLD,                    KC_NO,      KC_LEFT,        KC_DOWN,         KC_UP,         KC_RGHT,            KC_NO,
+  KC_TRNS,  KC_LGUI,  KC_LSFT,  RCS(KC_TAB),    C(KC_TAB),  KC_TRNS,  KC_TRNS, KC_TRNS, LGUI(KC_LEFT),  C(KC_LEFT), LALT(KC_LEFT),  LALT(KC_RIGHT), C(KC_RIGHT),    LGUI(KC_RIGHT),
+                                KC_TRNS,        KC_TRNS,        KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,        KC_TRNS
 ),
 /* ADJUST - currently unused
  * ,-----------------------------------------.                    ,-----------------------------------------.
