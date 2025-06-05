@@ -1,3 +1,4 @@
+#include <limits.h>
 #include QMK_KEYBOARD_H
 
 
@@ -6,6 +7,7 @@ enum layer_number {
   _COLEMAKM,
   _LOWER,
   _RAISE,
+  _NAV,
   _ADJUST,
 };
 
@@ -40,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                                   KC_F7,          KC_F8, KC_F9, KC_F10, KC_F11,  KC_F12,
   KC_BSLS, KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE,                                 KC_TRNS,        KC_P7, KC_P8, KC_P9,  KC_PAST, KC_TILD,
   KC_SCLN, KC_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRAVE,                                KC_CIRC,        KC_P4, KC_P5, KC_P6,  KC_PPLS, KC_MINUS,
-  KC_AMPR, KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, LCTL(KC_BSPC), LALT(KC_F4), RALT(KC_F4), RCTL(KC_BSPC),  KC_P1, KC_P2, KC_P3,  KC_SLSH, KC_COLN,
+  KC_AMPR, KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, S(KC_MINUS), LALT(KC_F4), RALT(KC_F4),   S(KC_MINUS),  KC_P1, KC_P2, KC_P3,  KC_SLSH, KC_COLN,
                              KC_TRNS, KC_TRNS, KC_LCTL,       KC_TRNS,     KC_TRNS,     KC_TRNS, KC_P0, KC_P0
 ),
 /* RAISE
@@ -48,9 +50,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = LAYOUT(
   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,                          TO(0),    TO(1),          KC_TRNS,        KC_TRNS,        KC_TRNS,            KC_TRNS,
-  KC_TRNS,  KC_TRNS,  KC_NO,    MS_UP,    KC_NO,    MS_WHLU,                          KC_NO,    KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,             KC_TRNS,
+  KC_TRNS,  KC_TRNS,  KC_NO,    MS_UP,    KC_NO,    MS_WHLU,                          C(G(A(KC_LEFT))),    C(A(KC_LEFT)),        C(A(KC_UP)),        C(A(KC_DOWN)),        C(A(KC_RIGHT)),             C(G(A(KC_RIGHT))),
   KC_TRNS,  KC_LGUI,  MS_LEFT,  MS_DOWN,  MS_RGHT,  MS_WHLD,                          KC_NO,    KC_LEFT,        KC_DOWN,         KC_UP,         KC_RGHT,            KC_NO,
-  KC_TRNS,  KC_LCTL,  KC_LSFT,  MS_BTN1,  MS_BTN2,  KC_LEFT_SHIFT,  KC_TRNS, KC_TRNS, KC_PLUS,  C(KC_LEFT), LALT(KC_LEFT),  LALT(KC_RIGHT), C(KC_RIGHT),    KC_BSLS,
+  KC_TRNS,  KC_LCTL,  KC_LSFT,  MS_BTN1,  MS_BTN2,  KC_LEFT_SHIFT,  KC_TRNS, KC_TRNS, C(KC_LEFT),  G(KC_LEFT), LALT(KC_LEFT),  LALT(KC_RIGHT), G(KC_RIGHT),    C(KC_RIGHT),
                                 KC_TRNS,  KC_TRNS,  KC_TRNS,        KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,        KC_TRNS
 ),
 
@@ -58,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,        KC_TRNS,        KC_TRNS,                    TO(0),      TO(1),          KC_TRNS,        KC_TRNS,        KC_TRNS,            KC_TRNS,
   KC_TRNS,  KC_TRNS,  KC_NO,    C(KC_LEFT),     C(KC_RIGHT),    MS_WHLU,                    KC_NO,      KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,             KC_TRNS,
   KC_TRNS,  KC_LALT,  KC_LCTL, KC_LSFT,        KC_TAB,         MS_WHLD,                    KC_NO,      KC_LEFT,        KC_DOWN,         KC_UP,         KC_RGHT,            KC_NO,
-  KC_TRNS,  KC_LGUI,  KC_LSFT,  RCS(KC_TAB),    C(KC_TAB),  KC_TRNS,  KC_TRNS, KC_TRNS, LGUI(KC_LEFT),  C(KC_LEFT), LALT(KC_LEFT),  LALT(KC_RIGHT), C(KC_RIGHT),    LGUI(KC_RIGHT),
+  KC_TRNS,  KC_LGUI,  KC_LSFT,  RCS(KC_TAB),    C(KC_TAB),  KC_TRNS,  KC_TRNS, KC_TRNS, G(KC_LEFT),  G(KC_LEFT), LALT(KC_LEFT),  LALT(KC_RIGHT), G(KC_RIGHT),    C(KC_RIGHT),
                                 KC_TRNS,        KC_TRNS,        KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,        KC_TRNS
 ),
 /* ADJUST - currently unused
