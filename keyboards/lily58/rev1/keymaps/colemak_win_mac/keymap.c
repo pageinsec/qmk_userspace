@@ -41,10 +41,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * Number and symbol layer
  */
 [_LOWER] = LAYOUT(
-  KC_EQL,   KC_F1,              KC_F2,          KC_F3,          KC_F4,          KC_F5,                          KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,             KC_BSLH,
+  KC_EQL,   KC_F1,              KC_F2,          KC_F3,          KC_F4,          KC_F5,                          KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,             KC_BSLS,
   KC_EXLM,  KC_AT,              KC_HASH,        KC_LCBR,        KC_RCBR,        KC_PIPE,                        KC_SLSH,    KC_PERC,    KC_CIRC,    KC_COLN,    KC_ASTR,            KC_PLUS,
   KC_BSPC,  LSFT_T(KC_1),       LCTL_T(KC_2),   LGUI_T(KC_3),   LALT_T(KC_4),   KC_5,                           KC_6,       KC_7,       KC_8,       KC_9,       KC_PPLS,            KC_MINUS,
-  KC_DLR,   LGUI_T(KC_LPRN),    KC_RPRN,        KC_LBRC,        KC_RBRC,        S(KC_MINUS), KC_COLN, KC_SEMI,  KC_EQL,     KC_LPRN,    KC_RPRN,    KC_DOT,     RGUI_T(KC_SLSH),    KC_DEL,
+  KC_DLR,   LGUI_T(KC_LPRN),    KC_RPRN,        KC_LBRC,        KC_RBRC,        S(KC_MINUS), KC_COLN, KC_SCLN,  KC_EQL,     KC_LPRN,    KC_RPRN,    KC_DOT,     RGUI_T(KC_SLSH),    KC_DEL,
                                 KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,                        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
 ),
 /* RAISE
