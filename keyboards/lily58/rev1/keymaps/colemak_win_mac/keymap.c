@@ -3,8 +3,8 @@
 
 
 enum layer_number {
-  _COLEMAKW = 0,
-  _COLEMAKM,
+  _COLEMAKM = 0,
+  _COLEMAKW,
   _LOWER,
   _RAISE,
   _NAV,
@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,   KC_Q,           KC_W,           KC_F,           KC_P,             KC_G,                                         KC_J,           KC_L,           KC_U,           KC_Y,           KC_SCLN,         KC_GRV,
   KC_BSPC,  LSFT_T(KC_A),   LCTL_T(KC_R),   LGUI_T(KC_S),   LALT_T(KC_T),     KC_D,                                         KC_H,           RALT_T(KC_N),   RGUI_T(KC_E),   RCTL_T(KC_I),   RSFT_T(KC_O),    LT(4, KC_QUOT),
   KC_GRAVE, LGUI_T(KC_Z),   KC_X,           KC_C,           LSFT_T(KC_V),     LT(4, KC_B),      KC_ESC,         KC_MINUS,   KC_K,           RSFT_T(KC_M),   KC_COMM,        KC_DOT,         RGUI_T(KC_SLSH), KC_DEL,
-                            KC_LEFT,        KC_RIGHT,       LT(3, KC_ENT),    LT(2, KC_SPC),                                LT(3, KC_ENT),  LT(3, KC_ENT),  KC_DOWN,        KC_UP
+                            KC_LEFT,        KC_RIGHT,       LT(2, KC_ENT),    LT(3, KC_SPC),                                LT(3, KC_SPC),  LT(2, KC_ENT),  KC_DOWN,        KC_UP
 ),
 
 /* COLEMAKW
@@ -43,8 +43,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT(
   KC_EQL,   KC_F1,              KC_F2,          KC_F3,          KC_F4,          KC_F5,                          KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,             KC_BSLS,
   KC_EXLM,  KC_AT,              KC_HASH,        KC_LCBR,        KC_RCBR,        KC_PIPE,                        KC_SLSH,    KC_PERC,    KC_CIRC,    KC_COLN,    KC_ASTR,            KC_PLUS,
-  KC_BSPC,  LSFT_T(KC_1),       LCTL_T(KC_2),   LGUI_T(KC_3),   LALT_T(KC_4),   KC_5,                           KC_6,       KC_7,       KC_8,       KC_9,       KC_PPLS,            KC_MINUS,
-  KC_DLR,   LGUI_T(KC_LPRN),    KC_RPRN,        KC_LBRC,        KC_RBRC,        S(KC_MINUS), KC_COLN, KC_SCLN,  KC_EQL,     KC_LPRN,    KC_RPRN,    KC_DOT,     RGUI_T(KC_SLSH),    KC_DEL,
+  KC_BSPC,  LSFT_T(KC_1),       LCTL_T(KC_2),   LGUI_T(KC_3),   LALT_T(KC_4),   KC_5,                           KC_6,       KC_7,       KC_8,       KC_9,       KC_0,               KC_MINUS,
+  KC_DLR,   KC_LPRN,            KC_RPRN,        KC_LBRC,        KC_RBRC,        S(KC_MINUS), KC_COLN, KC_SCLN,  KC_EQL,     KC_LPRN,    KC_RPRN,    KC_DOT,     RGUI_T(KC_SLSH),    KC_DEL,
                                 KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,                        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS
 ),
 /* RAISE
